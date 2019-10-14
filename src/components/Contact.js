@@ -19,10 +19,10 @@ class Contact extends React.Component {
                             const onlineChange = !this.state.online;
                             this.setState({ online: onlineChange })
                         }}>
-                        <p className="status-text">{this.state.online ? 'online' : 'offline'}</p>
-                        <span 
+                        <text 
                         className={this.state.online ? "status-online" : "status-offline"}
-                        ></span>
+                        ></text>
+                        <text className="status-text">{this.state.online ? 'online' : 'offline'}</text>
                     </div>
                 </div>
             </div>
